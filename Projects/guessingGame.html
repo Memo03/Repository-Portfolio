@@ -24,26 +24,23 @@ var guess = prompt(hint);
 guess = Number(guess) 
 
 // Use an if statement to see if the player's guess is equal to the random one generated
-if (randnum = guess) {
+if (randnum == guess) {
    hint = "Correct"
 }
-else {
-   if (randnum > guess) {
+else if(guess > randnum) {
       hint = "Too BIG!"
-   } 
-   else{
-      if (randnum < guess) {
+   }
+
+   else if(guess < randnum) {
          hint = "Too SMALL!"
       }
-   }
+   
 // Use an else statement to notify the user if they guessed incorrectly
 
 // Part 2: Inside the else statement, tell the player whether their guess is too small or too big, Hint: you'll need to use an if statement
-
 }
-
 // Part 2: If the user runs out of guesses, tell them what the correct number is.  Hint: What variable did we use to define it?
 
 
    </script>
-</html>`
+</html>
