@@ -7,13 +7,13 @@
 var randnum = Math.floor((Math.random() * 20) + 1);
 
 // Part 2: Create variable that holds the number of turns
-
+var numturns = 4;
 // Create a variable for your "hint to the user" Ex: Guess my number between 1-20
 var hint= 'Guess the number I am thinking between 1-20'; 
 
 // when is true != true?  What should our condition actually be?
 
-while (true == true) {
+while (numturns>0)  {
 
 // Use the prompt method to ask the user for input. Use this to also display the "hint to the user"
 // Part 2: Also display how many tries the user has left
@@ -29,10 +29,12 @@ if (randnum == guess) {
 }
 else if(guess > randnum) {
       hint = "Too BIG!"
+      numturns--
    }
 
    else if(guess < randnum) {
          hint = "Too SMALL!"
+         numturns--
       }
    
 // Use an else statement to notify the user if they guessed incorrectly
@@ -40,6 +42,7 @@ else if(guess > randnum) {
 // Part 2: Inside the else statement, tell the player whether their guess is too small or too big, Hint: you'll need to use an if statement
 }
 // Part 2: If the user runs out of guesses, tell them what the correct number is.  Hint: What variable did we use to define it?
+alert(randnum);
 
 
    </script>
